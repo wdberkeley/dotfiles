@@ -38,15 +38,11 @@ export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30
 # Colors for the prompt.
 # From https://www.tldp.org/LDP/abs/html/sample-bashrc.html.
 # They are all bold. See the original source for more choices.
-BRed='\e[1;31m'         # Red
-BGreen='\e[1;32m'       # Green
-BYellow='\e[1;33m'      # Yellow
-BBlue='\e[1;34m'        # Blue
-BPurple='\e[1;35m'      # Purple
-BCyan='\e[1;36m'        # Cyan
-BWhite='\e[1;37m'       # White
+BGreen='\[\e[1;32m\]'       # Green
+BPurple='\[\e[1;35m\]'      # Purple
+BWhite='\[\e[1;37m\]'       # White
 
-NC="\e[m"               # Color Reset
+NC='\[\e[m\]'               # Color Reset
 
 # Prompt with git information, plus git completion.
 source ~/.git-prompt.sh
@@ -57,4 +53,8 @@ export GIT_PS1_SHOWDIRTYSTATE="yes"
 # Kudu.
 export KUDU_HOME=~/src/kudu
 export KUDU_BIN=~/src/kudu/build/latest/bin
+
+# Rust.
+# This is also managed with rustup.
+export PATH="$HOME/.cargo/bin:$PATH" # Add rustup.rs installation to path.
 
