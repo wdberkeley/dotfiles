@@ -4,5 +4,5 @@
 if [ -r "$HOME/.bashrc" ]; then
   source "$HOME/.bashrc"
 else
-  echo "Unable to find .bashrc"
+  echo "unable to find .bashrc"
 fi
