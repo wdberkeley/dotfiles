@@ -24,10 +24,8 @@ plugins=()
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
 export LANG=en_US.UTF-8
+export EDITOR=vim
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
