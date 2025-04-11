@@ -1,5 +1,9 @@
 -- wdberkeley's Lua neovim configuration.
 
+-- `vim` is provided by neovim so don't warn.
+---@diagnostic disable-next-line: lowercase-global
+vim = vim
+
 -- Abbreviations.
 local opt = vim.opt
 local map = vim.keymap.set
